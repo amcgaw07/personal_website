@@ -27,16 +27,13 @@
 				<a class="nav-link" href="#">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="#projects">Projects</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Services</a>
+				<a class="nav-link" href="#about">About Me</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Team</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Connect</a>
+				<a class="nav-link" href="#contact">Contact</a>
 			</li>
 		</ul>
 	</div>
@@ -44,7 +41,7 @@
 </nav>
 
 <!--- Image Slider -->
-<div class="container bg-dark">
+<div class="container ">
 <div class="row">
 	
 	<div class="col-lg-12">
@@ -56,21 +53,21 @@
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="img/flatcircles.jpg">
+				<img src="img/cathy.png">
 				<div class="carousel-caption">
-					<h2 class="display-2">Welcome!</h1>
-					<h3>Lorem ipsum dolor sit amet, dicunt verterem te pro. Est ubique numquam in, sed ne facilisis dissentiunt accommodare. No sit vidit habemus, sed aeque vocibus urbanitas at. Ad liber eruditi praesent nam, ius cu fabulas adversarium.
-		Tritani disputationi per ei. Per at agam dolores, errem animal tamquam duo no. No prompta perfecto pri, hinc inimicus intellegebat cum id, sea animal regione deleniti te. Ut sale iusto facilis nam, ad has habeo tibique quaestio. Eam et quot feugiat consequuntur, et per idque maluisset laboramus.
-		</h3>
-					<button type="button" class="btn btn-outline-light btn-lg"><a href="img/resume.pdf">Resume</a></button>
-					<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+					<h2 class="display-2">Welcome!</h2>
+					<h3><p class="text-justify">My name is Anthony McGaw and I am currently a junior at the <br> Univeristy of Pittsburgh pursuing a Bachelor's Degree in Computer Science.</p></h3>
+					<button type="button" class="btn btn-primary btn-lg"><a href="img/resume.pdf">View Resume</a></button>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="img/background2.png">
+				<img src="img/pittsburgh.jpg">
 			</div>
 			<div class="carousel-item">
-				<img src="img/background3.png">
+				<img src="img/tort.jpg">
+				<div class="carousel-caption">
+					<h5 class="display-5"> My Tortoise, Tortellini </h5>
+				</div>
 			</div>
 		</div>
 			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
@@ -86,6 +83,88 @@
 	
 </div>
 </div>
+<hr class="my-4">
+<!--- Meet the team -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4" id="projects">Projects</h1>
+	</div>
+	<hr>
+</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="img/website.png">
+			<div class="card-body">
+				<h4 class="card-title">This Website</h4>
+				<p class="card=text">I created this website to learn how to use a front-end web framework as well as improve my css/html/javascript skills.
+				</p><p>Click the button below to check out the source code!</p>
+				<a href="https://github.com/amcgaw07/personal_website" class="btn btn-secondary">Source Code</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="img/prettyprint.png">
+			<div class="card-body">
+				<h4 class="card-title">BST Command Line Printer</h4>
+				<p class="card=text">Takes an input file with any data sorted in any manner and prints it to the command line as it is inputted, as well in a visually pleasing manner</p>
+				<a href="https://github.com/amcgaw07/BST-Pretty-Printer" class="btn btn-secondary">Source Code</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="img/paper.png">
+			<div class="card-body">
+				<h4 class="card-title">Engineering Research Paper</h4>
+				<p class="card=text">Semester-long research paper which was completed as part of the Swanson School of Engineering First-Year Conference. Learned valuable teamwork skills, as well as time managemnet.</p>
+				<a href="img/paper.pdf" class="btn btn-secondary">See paper</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<!--- Two Column Section -->
+<div id="about" class="container-fluid padding">
+<div class="row padding">
+	<div class="col-lg-6">
+		<h2>About Me</h3>
+		<p>paragraph 1</p>
+		<p>paragraph 2</p>
+		<br>
+	</div>
+	<div class="col-lg-6">
+		<img src="img/bootstrap2.png" class="img-fluid">
+		
+	</div>
+</div>
+<hr class="my-4">
+</div>
+<!--- Connect -->
+<div id="contact" class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Connect With Me</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="https://www.linkedin.com/in/anthony-mcgaw-879452192"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/amcgaw07"><i class="fab fa-github"></i></a>
+		<a href="mailto:ajm279@pitt.edu"><i title="ajm279@pitt.edu" class="fas fa-envelope"></i></a>
+		<a href="#"><i title = "412-228-7901" class="fas fa-phone"></i></a>
+	</div>
+</div>
+</div>
+<hr class="my-4">
 <!--- Moving Eyeballs -->
 <button class="fun" data-toggle="collapse" data-target="#emoji"> click for fun
 </button>
@@ -115,88 +194,7 @@
 	</div>
 </figure> 
 <hr class="my-4">
-<!--- Connect -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connect With Me</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a href="https://www.linkedin.com/in/anthony-mcgaw-879452192"><i class="fab fa-linkedin"></i></a>
-		<a href="https://github.com/amcgaw07"><i class="fab fa-github"></i></a>
-		<a href="mailto:ajm279@pitt.edu"><i title="Send me an email" class="fas fa-envelope"></i></a>
-		<a href="#"><i title = "Call me at 412-228-7901" class="fas fa-phone"></i></a>
-	</div>
-</div>
-</div>
-<hr class="my-4">
 
- 
-<!--- Meet the team -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Projects</h1>
-	</div>
-	<hr>
-</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/team1.png">
-			<div class="card-body">
-				<h4 class="card-title">This Website</h4>
-				<p class="card=text">I created this website to learn how to use a front-end web framework as well as improve my css/html/javascript skills.</p>
-				<a href="#" class="btn btn-secondary">Check Out the Source Code Here</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/team2.png">
-			<div class="card-body">
-				<h4 class="card-title">Mary Joe</h4>
-				<p class="card=text">John is  internet man</p>
-				<a href="#" class="btn btn-secondary">See profile</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/team3.png">
-			<div class="card-body">
-				<h4 class="card-title">Phil Hoe</h4>
-				<p class="card=text">John is  internet man</p>
-				<a href="#" class="btn btn-secondary">See profile</a>
-			</div>
-		</div>
-	</div>
-
-</div>
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-lg-6">
-		<h2>OurPhilosophy</h3>
-		<p>paragraph 1</p>
-		<p>paragraph 2</p>
-		<br>
-	</div>
-	<div class="col-lg-6">
-		<img src="img/bootstrap2.png" class="img-fluid">
-		
-	</div>
-</div>file:///C:/Users/uqsap/Desktop/Class%20Info%20SPRING%201920/cs1520/tutorial-29/Bootstrap%204%20Site%20Files/Bootstrap%204%20Site%20Files/index.html#slide
-<hr class="my-4">
-</div>
 <!--- Welcome Section -->
 <div class="container-fluid padding">
 <div class="row welcome text-center">
@@ -205,12 +203,10 @@
 	</div>
 	<hr>
 	<div class="col-12">
-		<p class="lead">designed with help from w3newbie</p>
+		<p class="lead"></p>
 	</div>
 </div>
 </div>
-
-
 <!--- Three Column Section -->
 <div class="container-fluid padding">
 <div class="row text-center padding">
@@ -235,39 +231,18 @@
 
 
 
-<!--- Footer -->
+<!--- Footer-->> 
 <footer>
 <div class="container-fluid padding">
 <div class="row text-center">
-	<div class="col-md-4">
-		<img src="img/w3newbie.png">
-		<hr class="light">
-		<p>555-555-5555</p>
-		<p> email@address</p>
-		<p>Street</p>
-		<p> City, State, ZIP</p>
-	</div>
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Our Hours</h5>
-		<hr class="light">
-		<p>1-2</p>
-		<p>1-2</p>
-		<p>1-2</p>
-		<p>1-2</p>
-	</div>
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Our Hours</h5>
-		<hr class="light">
-		<p>1-2</p>
-		<p>1-2</p>
-		<p>1-2</p>
-		<p>1-2</p>
+	<div class="col-md-12">
+	<i class="fas fa-map-marker-alt"></i> 
+	Pittsburgh, PA <br>
+	email me at: ajm279@pitt.edu
+	
 	</div>
 	<div class="col-12">
 		<hr class="light-100">
-		<h5>&copy; w3newbie.com</h5>
 	</div>
 
 </div>
