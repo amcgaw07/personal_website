@@ -26,23 +26,14 @@ html, body {
 	margin: auto;
 	
 }
-.carousel-caption h2 {
-	font-size: 400%;
+.carousel-caption{
+	font-size: 150%;
 	text-transform: capitalize;
 	text-shadow: 1px 1px 15px #000;
-	position: relative;
-	top: -20rem;
-	left: -7rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 	
-}
-.carousel-caption h3 {
-	font-size: 90%;
-	font-weight: 500;
-	text-shadow: 1px 1px 10px #000;
-	padding-bottom: 1rem;
-	position: relative;
-	top: -19rem;
-	left: 0rem;
 }
 .btn-primary {
 	background-color: #6648b1;
@@ -193,37 +184,29 @@ hr.light-100 {
 	}
 	.carousel-caption {
 		position: absolute;
-		top: 24rem;
-		
-	}
-	.carousel-caption .btn {
-		font-size: 95%;
-		padding: 8px 14px;
-		position: relative;
-		top: -8rem;
-
-	}
-  }
-@media (max-width: 768px) {
-	.carousel-caption {
-		position: absolute;
-		top: 100%;
+		top: 15rem;
 		
 	}
 	.carousel-caption h2 {
-		font-size: 100%
+		font-size: 70%
+	}
+	
+  }
+@media (max-width: 768px) {
+	.carousel-caption {
+		position: relative;
+		top: -17rem;
+		left: -0rem;
+		
+	}
+	.carousel-caption h2 {
+		font-size: 60%
 	}
 	.carousel-caption h3 {
 		font-size: 70%;
 		font-weight: 400;
 		padding-bottom: .2rem;
 	}
-	.carousel-caption .btn {
-		font-size: 95%;
-		padding: 8px 14px;
-		position: relative;
-		top: -12rem;
-
 	}
 	.display-4 {
 		font-size: 300%;
@@ -236,18 +219,15 @@ hr.light-100 {
 }
 @media (max-width: 576px) {
   .carousel-caption {
-		position: absolute;
-		
+		position: relative;
+		top: -15rem;
+		left: -0rem;
 	}
 	.carousel-caption h2 {
-		font-size: 90%
+		font-size: 50%
 	}
 	.carousel-caption h3 {
 		font-size: 70%;
-	}
-	.carousel-caption .btn {
-		font-size: 90%;
-		padding: 4px 8px;
 	}
 	.carousel-indicators {
 		display:none;
