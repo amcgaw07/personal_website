@@ -1,274 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Anthony McGaw</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="myscript.js"></script>
-	<link href="style.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light sticky-top" style ="background-color: #e3f2fd;" > <!-- sticky-top keeps the top bar moving down a bit-->
-<div class="container-fluid">
-	<a class="navbar-brand" href="#"><img src="img/A.png">nthony McGaw</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"</span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">About Me</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#projects">Projects</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			</li>
-		</ul>
-	</div>
-</div>
-</nav>
-<!--- Image Slider -->
-<div class="container ">
-<div class="row">
-	
-	<div class="col-lg-12">
-		<div id="slide" class="carousel slide" data-ride="carousel" data-interval="false">
-		<ul class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/cathy.png">
-				<div class="carousel-caption">
-					<h2 class="display-4">Welcome!</h2>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Anthony McGaw Personal Website</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Connect</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+					<img class="me" src="assets/img/portfolio/fullsize/me.jpg" alt="Avatar" />
+                        <h1 class="text-uppercase text-white font-weight-bold">Anthony McGaw</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">Senior | University of Pittsburgh | Computer Science</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">About Me</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white mb-4">I started out my college career as a chemical engineer, but quickly realized I did not enjoy chemistry nearly as much as I thought (a somewhat major part of chemical engineering). 
+						<br><br> Chemistry != Fun<br><br>
+						Thankfully the engineering program introduced me to programming, 
+						starting with basic JavaScript and eventually intermediate MATLAB and C++.<br><br> At one point when I was around 12 I tried to learn how to code due to exciting 
+						<a class="link" href="https://4thdimensiontraveler.fandom.com/wiki/The_H4x:_A_Short_History_of_Hacking_in_Minecraft">hacked Minecraft</a> clients which people 
+						developed and I abused during the early stages of the game. I was shocked that someone could create such a robust computer program for fun.  Despite this, my 12 year old brain could not handle the complex Java code I attempted to absorb 
+						through YouTube videos. I simply continued to use other peoples coded clients and my learning was unfortunately pushed to the side.<br><br>
+						Fast forward 10 years later and the engineering program rekindled my interest in programming. I made the switch to computer science at the beginning of 
+						my Sophomore year and have been here since.</p>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">Connect with me!</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-file mb-4"></i>
+                            <h3 class="h4 mb-2">Resume</h3>
+                            <p class="text-muted mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <a href="https://github.com/amcgaw07"><i class="fab fa-4x fa-github mb-4"></i></a>
+                            <h3 class="h4 mb-2">Github</h3>
+                            <p class="text-muted mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <a href="https://www.linkedin.com/in/anthony-mcgaw/"><i class="fab fa-4x fa-linkedin mb-4"></i></a>
+                            <h3 class="h4 mb-2">LinkedIn</h3>
+                            <p class="text-muted mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <a href="mailto:ajm279@pitt.edu"<i class="fas fa-4x fa-envelope mb-4"></i></a>
+                            <h3 class="h4 mb-2">Email</h3>
+                            <p class="text-muted mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!--- Moving Eyeballs -->
+		<div id="emoji">
+		<div class="card card-body-1">
+			
+			<div class="col-xs-6">
+			
+			<div class="eyes">
+					<div class="eye">
+						<div class="ball"></div>
+					</div>
+					<div class="eye">
+						<div class="ball blue"></div>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<img src="img/pittsburgh.jpg">
+
 			</div>
-			<div class="carousel-item">
-				<img src="img/tort.jpg">
-				<div class="carousel-caption-1">
-					<h5 class="display-5"> My Tortoise, Tortellini </h5>
-				</div>
+			
 			</div>
-		</div>
-			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</div>
-	
-</div>
-</div>
-<hr class="my-4">
-<!--- About Me Section -->
-<div id="about" class="container-fluid padding">
-<div class="row padding">
-	<div class="col-lg-6">
-		<h2>About Me</h3>
-		<p>My name is Anthony McGaw and I am currently a junior at the Univeristy of Pittsburgh pursuing a Bachelor's Degree in Computer Science.
-						I originally entered Pitt with the intention of becoming a chemical engineer. After a dying love for chemistry was matched with a growing 
-				interest in coding, I switched my major over to computer science and have been here since! </p>
-		<p>I am interested in many different branches within CS, but currently I am taking a web development class and am focused on learning different tools for the creation of web applications.
-			This includes Python, HTML, CSS, JavaScript, Flask, JSON and AJAX </p>
-				
-		<button type="button" class="btn btn-primary btn-lg"><a href="img/resume.pdf">View Resume</a></button>
-		<br>
-	</div>
-	<div class="col-lg-6">
-		<img src="img/bootstrap2.png" class="img-fluid">
-		<p> I enjoy fishing in my free time! </p>
 		
-	</div>
-</div>
-<hr class="my-4">
-</div>
-<!--- Projects -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4" id="projects">Projects</h1>
-	</div>
-	<hr>
-</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/website.png">
-			<div class="card-body">
-				<h4 class="card-title">This Website</h4>
-				<p class="card=text">I created this website to learn how to use a front-end web framework as well as improve my css/html/javascript skills.
-				</p><p>Click the button below to check out the source code!</p>
-				<a href="https://github.com/amcgaw07/personal_website" class="btn btn-secondary">Source Code</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/prettyprint.png">
-			<div class="card-body">
-				<h4 class="card-title">BST Command Line Printer</h4>
-				<p class="card=text">Takes an input file with any data sorted in any manner and prints it to the command line as it is inputted, as well in a visually pleasing manner</p>
-				<a href="https://github.com/amcgaw07/BST-Pretty-Printer" class="btn btn-secondary">Source Code</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/paper.png">
-			<div class="card-body">
-				<h4 class="card-title">Engineering Research Paper</h4>
-				<p class="card=text">Semester-long research paper which was completed as part of the Swanson School of Engineering First-Year Conference. Learned valuable teamwork skills, as well as time managemnet.</p>
-				<a href="img/paper.pdf" class="btn btn-secondary">See paper</a>
-			</div>
-		</div>
-	</div>
-
-</div>
-</div>
-<!--- Connect -->
-<div id="contact" class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connect With Me</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a href="https://www.linkedin.com/in/anthony-mcgaw-879452192"><i class="fab fa-linkedin"></i></a>
-		<a href="https://github.com/amcgaw07"><i class="fab fa-github"></i></a>
-		<a href="mailto:ajm279@pitt.edu"><i title="ajm279@pitt.edu" class="fas fa-envelope"></i></a>
-		<a href="#"><i title = "412-228-7901" class="fas fa-phone"></i></a>
-	</div>
-</div>
-</div>
-<hr class="my-4">
-<!--- Moving Eyeballs -->
-<button class="fun" data-toggle="collapse" data-target="#emoji"> click for fun
-</button>
-<div id="emoji" class="collapse">
-<div class="card card-body-1">
-	
-	<div class="col-xs-6">
-	<div class="eyes">
-		<div class="eye">
-			<div class="ball"></div>
 		</div>
 		
-		<div class="eye">
-			<div class="ball"></div>
 		</div>
-		
-	</div>
-	</div>
-	
-</div>
-</div>
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-		</div>
-	</div>
-</figure> 
-<hr class="my-4">
-
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Built with ease.</h1>
-	</div>
-	<hr>
-	<div class="col-12">
-		<p class="lead"></p>
-	</div>
-</div>
-</div>
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-code"></i>
-		<h3>HTML5</h3>
-		<p>Built with the latest version of HTML5</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-bold"></i>
-		<h3>BOOTSTRAP</h3>
-		<p>Built with the latest version of Bootstrap 4</p>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<i class="fab fa-css3"></i>
-		<h3>CSS3</h3>
-		<p>Built with the latest version of CSS3</p>
-	</div>
-</div>
-<hr class="my-4">
-</div>
-
-
-
-<!--- Footer-->> 
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-	<div class="col-md-12">
-	<i class="fas fa-map-marker-alt"></i> 
-	Pittsburgh, PA <br>
-	email me at: ajm279@pitt.edu
-	
-	</div>
-	<div class="col-12">
-		<hr class="light-100">
-	</div>
-
-</div>
-</div>
-
-
-</footer>
-
-
-
-</body>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Personal Project</div>
+                                <div class="project-name">This Website!</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="http://pitt-study.appspot.com/">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Class Project</div>
+                                <div class="project-name">Pitt Study Web Application</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Projects</div>
+                                <div class="project-name">Data Science Toolbox(work in progress)</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/ChemicalLooping.pdf">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Research Paper</div>
+                                <div class="project-name">Engineering Conference</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                         <a class="portfolio-box" href="">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Projects</div>
+                                <div class="project-name">TBD</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://www.dropbox.com/s/tuadhw6y8tax1u5/6.MOV?dl=0">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.png" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">My Pet</div>
+                                <div class="project-name">Tortellini</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white">
+            <div class="container text-center">
+                <h2 class="mb-4"></h2>
+                
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Anthony McGaw</div></div>
+			<div class="container"><div class="small text-center text-muted">Email Me at AJM279@pitt.edu</div></div>
+			
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script src="js/myscript.js"></script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
